@@ -13,16 +13,13 @@ var password=pass.value;
    
 var transaArea=document.getElementById("transaction-area");
 
-if(evalue.length<10  ){
-    alert("plz give valid email")
+if(evalue.length<5 && password.length<4 ){
+    alert("plz give valid email ad password")
     loginArea.style.display="block";
     
     
 }
-if(password.length<10){
-    alert("plz give valid password")
-    loginArea.style.display="block";
-}
+
 else{
     loginArea.style.display="none";
      transaArea.style.display="block"
